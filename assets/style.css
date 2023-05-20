@@ -106,8 +106,8 @@ section {
 }
 
 .btn-box {
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: space-between;
   width: 34.5rem;
   height: 5rem;
@@ -123,12 +123,17 @@ section {
   background: var(--main-color);
   border: 0.2rem solid var(--main-color);
   border-radius: 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   color: var(--bg-color);
   z-index: 1;
   overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn-box .btn:hover {
+  color: var(--main-color);
 }
 
 .btn-box .btn:nth-child(2) {
@@ -137,7 +142,11 @@ section {
 }
 
 .btn-box .btn:nth-child(2)::before {
-  background-color: var(--main-color);
+  background: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+  color: var(--bg-color);
 }
 
 .btn-box .btn::before {
@@ -145,7 +154,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 100%;
   background: var(--bg-color);
   z-index: -1;
@@ -154,4 +163,25 @@ section {
 
 .btn-box .btn:hover::before {
   width: 100%;
+}
+
+.home-sci {
+  position: absolute;
+  bottom: 4rem;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
 }
