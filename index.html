@@ -1,66 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>Portfólio</title>
 
-    <!--box icons-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!--  Font Awesome  -->
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
     />
+
+    <title>Portfólio</title>
   </head>
   <body>
-    <!--header design-->
-    <header class="header">
-      <a href="#" class="logo">Valderlan J.</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <nav id="navbar" class="navbar"><a href="#"></a></nav>
 
-    <!--home section design-->
-    <section class="home" id="home">
-      <img src="./assets/imagem/minhafoto2.png" alt="" />
-      <div class="home-content">
-        <h1>OI, Meu nome é <span> Valderlan Silva</span></h1>
-        <div class="text-animate">
-          <h3>Desenvolvedor Front-End</h3>
-        </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam atque
-          dicta esse voluptatum quisquam! Porro hic, atque illum quia dolores
-          voluptas! Veritatis minima veniam libero quasi corrupti. Libero, iure
-          natus.
-        </p>
+    <div class="container">
+      <!--====================== MENU DE NAVEGAÇÃO =========================-->
 
-        <div class="btn-box">
-          <a href="#" class="btn">Cotrate-me</a>
-          <a href="#" class="btn">Lets talk</a>
-        </div>
+      <div class="menu">
+        <a href="#welcome-section" class="menu-icon fas fa-home"></a>
+        <a href="#about" class="menu-icon fas fa-user"></a>
+        <a href="#projects" class="menu-icon fas fa-code"></a>
+        <a href="#experience" class="menu-icon fas fa-briefcase"></a>
+        <a href="#contact" class="menu-icon fas fa-envelope"></a>
       </div>
 
-      <div class="home-sci">
-        <a
-          href="https://www.linkedin.com/in/valderlan-jose-576b28201/ "
-          target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="https://github.com/valderlanjs" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://www.instagram.com/valderlanjs/" target="_blank"
-          ><i class="bx bxl-instagram"></i
-        ></a>
+      <!--===================  "JANELA" PRINCIPAL  =============================-->
+      <div class="portfolio">
+        <!--=================   SEÇÃO DE CABEÇALHO  =========================-->
+
+        <section class="header">
+          <img
+            class="header-img"
+            src="./imagem/minhaFoto.jpeg"
+            alt="FotoDePerfil"
+          />
+          <h1>Valderlan Silva</h1>
+          <h2>Desenvolvedor Front-End</h2>
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/valderlan-jose-576b28201/"
+              target="_blank"
+              class="fab fa-linkedin-in"
+              id="link de perfil"
+            >
+            </a>
+            <a
+              href="https://github.com/valderlanjs"
+              target="_blank"
+              class="fab fa-github"
+            ></a>
+            <a
+              href="https://www.instagram.com/valderlanjs/"
+              target="_blank"
+              class="fab fa-instagram"
+            ></a>
+          </div>
+        </section>
+
+        <!--===========================  SEÇÃO DE CONTEÚDO =======================-->
+
+        <div class="content">
+          <!--==========================  HOME  ====================-->
+
+          <section class="content-card home" id="welcome-section">
+            <h1>Olá, eu sou Valderlan José da Silva</h1>
+          </section>
+
+          <!--========================= SOBRE MIM =========================-->
+
+          <section class="content-card about" id="about">
+            <h1>Sobre mim</h1>
+            <div class="about-item about-me">
+              <p>
+                Sou uma pessoa apaixonado por tecnologia e por mudar o mundo
+                através da programação. Um entusiasta em aprender dia após dia
+                novas tecnologias do mercado.
+              </p>
+              <p>
+                Com um interesse constante na área de desenvolvimento web,
+                aprofundei meus conhecimentos em HTML5, CSS e JavaScript, além
+                de framework como React e algumas outras linguagens. Após um
+                intenso período de estudo e prática, busco agora minha primeira
+                oportunidade como desenvolvedor front-end, onde espero aplicar
+                meus conhecimentos e habilidades para criar interfaces elegantes
+                e funcionais que proporcionem uma experiência agradável para os
+                usuários.
+              </p>
+            </div>
+
+            <div class="col-2">
+              <div class="about-item skills">
+                <h1>Habilidades</h1>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">React</span>
+                <span class="skill">Sass</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Git/Github</span>
+                <span class="skill">API</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">Figma</span>
+              </div>
+
+              <div class="about-item languages">
+                <h1>Idiomas</h1>
+
+                <div class="language">
+                  <p>Inglês</p>
+                  <span class="bar"><span class="english"></span></span>
+                </div>
+                <div class="language">
+                  <p>Espanhol</p>
+                  <span class="bar"><span class="spanish"></span></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--================================= PROJETOS ========================-->
+
+          <section class="content-card projects" id="projects">
+            <h1>Projetos</h1>
+
+            <div class="col-2 project-list">
+              <div class="project-tile">
+                <img src="./imagens/img_ping_pong.png" alt="" />
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>Jogo Ping Pong</h3>
+                    <p>
+                      Este foi um jogo que desenvolvi no curso DevSamurai, foi
+                      feito totalmente com javascript. Foi utilizado o elemento
+                      canvas para desenhar os gráficos em javascript, também é
+                      definido várias funções para desenhar os elementos do
+                      jogo, incluindo o campo, a linha, as raquetes, a bola e o
+                      placar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tile">
+                <img src="./imagens/img_login.png" alt="" />
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>Página de Login</h3>
+                    <p>
+                      Este código é uma página web HTML de login estilizado e
+                      responsivo. O formulário de login consiste em um campo de
+                      entrada para um endereço de e-mail, um campo de senha que
+                      pode ser revelado por meio de um botão de alternância, um
+                      link para redefinir a senha e um botão de login.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tile">
+                <img src="./imagens/img_em_breve.png" alt="" />
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>projeto 3</h3>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tile">
+                <img src="./imagens/img_em_breve.png" alt="" />
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>Projeto 4</h3>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://github.com/valderlanjs" target="_blank"
+              >Ver Mais...</a
+            >
+          </section>
+
+          <!--=============================== EXPERIÊNCIA =============================-->
+
+          <section class="content-card experience" id="experience">
+            <h1>Educação</h1>
+            <div class="timeline">
+              <div class="timeline-items">
+                <div class="timeline-item">
+                  <div class="timeline-date">2022 - Cursando</div>
+                  <div class="timeline-content">
+                    <h3>Universidade Estácio de Sá</h3>
+                    <p>
+                      Estou atualmente cursando o tecnólogo de
+                      <strong> Análise e desenvolvimento de Sistemas</strong>,
+                      com prazo para término em Junho de 2024.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                      <h3>Curso JavaScript</h3>
+                      <p>
+                        Curso de JavaScript na plataforma DevSamurai, no qual
+                        aprendi do mais básico ao avançado desta linguagem, indo
+                        de conhecimento de DOM à POO(programação orientada a
+                        objeto). Neste curso desenvolvi pequenos projetos como
+                        gerador de senhas, TODO List e um jogo de Ping Pong.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                      <h3>Curso Programador Full Stack OneBitCode</h3>
+                      <p>
+                        Neste curso, além de melhorar ainda mais meu
+                        conhecimento em JavaScript, aprimorei minhas habilidades
+                        de CSS e HTML5. Além de aprender novas habilidades na
+                        Programação, como no reactJS, TypeScript, Bootstrap,
+                        Github e Sass. Também desenvolvi um breve conhecimento
+                        na área do Back-end com NodeJS, MongoDB e Banco de Dados
+                        SQL no NodeJS.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                      <h3>Curso de UI Design na Udemy</h3>
+                      <p>
+                        Neste curso desenvolvi um conhecimento um pouco mais
+                        aprofundado no UI design através do Figma, com intuido
+                        de melhorar minhas habilidades no desenvolvimento
+                        Front-end, assim podendo criar interfaces mais atrativas
+                        e inovadoras para os usuários.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--============================  CONTATO   ============================-->
+
+          <section class="content-card contact" id="contact">
+            <h1>Contato</h1>
+            <form class="form" action="mailto:valderlanjosr15@gmail.com">
+              <div class="input-box">
+                <input
+                  type="text"
+                  class="text-input"
+                  name="name"
+                  placeholder="Nome"
+                />
+              </div>
+              <div class="input-box">
+                <input
+                  type="email"
+                  class="text-input"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="input-box">
+                <input
+                  type="subject"
+                  class="text-input"
+                  name="subject"
+                  id="subject"
+                  placeholder="Assunto"
+                />
+              </div>
+              <div class="input-text">
+                <textarea
+                  name="text"
+                  id="message"
+                  placeholder="Mensagem..."
+                ></textarea>
+              </div>
+              <div class="input-text">
+                <input
+                  type="submit"
+                  class="submit-btn"
+                  id="submit"
+                  value="Enviar"
+                />
+              </div>
+            </form>
+          </section>
+        </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
