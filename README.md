@@ -1,12 +1,22 @@
-# Portifólio
+
+# Portfólio
+
+## Descrição
+ 
+Esse portfólio é um site desenvolvido com as principais tecnologias front-end, HTML, CSS e JavaScript. O portfólio possui um design totalmente responsivo para todos os diferentes tipos de tela, possui uma biblioteca javascript de rolagem de tela, para animação dos conteúdos e dar mais fluidez a ele.
+
+## Exemplo
+
+### Home
+![Display para 1024px](/assets/img/img_readme/1024px.png)
+
+#### Skills
+![Display para 1024px](/assets/img/img_readme/skills.png)
+
+### Responsivo
+
+![Display para 1024px](/assets/img/img_readme/responsivo.png)
 
 
-|     | Projeto          | Live Demo                                                             |
-| :-: | ---------------- | --------------------------------------------------------------        |
-|     | Portfólio        | [Live Demo](https://valderlanjs.github.io/MeuPortifolio/)             |
- 
- 
-# Algumas Informações sobre o portfólio
- 
-Esse portfólio foi criado com intuito de mostrar um pouco das minhas habilidades na programação 
-e também poder apresentar alguns dos meus projetos que desenvolvi 
+##  Live Preview
+
