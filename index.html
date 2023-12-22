@@ -1,312 +1,275 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--******=======ICONS=====*****-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!--******=======CSS=====*****-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfólio  | Valderlan José</title>
+</head>
+<body>
+    <!--Header design-->
+    <header class="header">
+        <a href="#" class="logo">Portfólio.</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
+        </nav>
 
-    <link rel="stylesheet" href="./assets/style.css" />
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+<!--Home section design-->
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Olá, Eu me Chamo</h3>
+        <h1>Valderlan José da Silva</h1>
+        <p>Sou um desenvolvedor Web Full Stack, entusiasmado por tecnologia, 
+        com uma paixão por criar experiências digitais inovadoras e envolventes.
+        Estou sempre buscando opoprtunidades para expandir minhas habilidades e contribuir para projetos desafiadores.
+        </p>
 
-    <title>Portfólio</title>
-  </head>
-  <body>
-    <nav id="navbar" class="navbar"><a href="#"></a></nav>
-
-    <div class="container">
-      <!--====================== MENU DE NAVEGAÇÃO =========================-->
-
-      <div class="menu">
-        <a href="#welcome-section" class="menu-icon fas fa-home"></a>
-        <a href="#about" class="menu-icon fas fa-user"></a>
-        <a href="#projects" class="menu-icon fas fa-code"></a>
-        <a href="#experience" class="menu-icon fas fa-briefcase"></a>
-        <a href="#contact" class="menu-icon fas fa-envelope"></a>
-      </div>
-
-      <!--===================  "JANELA" PRINCIPAL  =============================-->
-      <div class="portfolio">
-        <!--=================   SEÇÃO DE CABEÇALHO  =========================-->
-
-        <section class="header">
-          <img
-            class="header-img"
-            src="./imagem/minhaFoto.jpeg"
-            alt="FotoDePerfil"
-          />
-          <h1>Valderlan Silva</h1>
-          <h2>Desenvolvedor Front-End</h2>
-          <div class="socials">
-            <a
-              href="https://www.linkedin.com/in/valderlan-jose-576b28201/"
-              target="_blank"
-              class="fab fa-linkedin-in"
-              id="link de perfil"
-            >
-            </a>
-            <a
-              href="https://github.com/valderlanjs"
-              target="_blank"
-              class="fab fa-github"
-            ></a>
-            <a
-              href="https://www.instagram.com/valderlanjs/"
-              target="_blank"
-              class="fab fa-instagram"
-            ></a>
-          </div>
-        </section>
-
-        <!--===========================  SEÇÃO DE CONTEÚDO =======================-->
-
-        <div class="content">
-          <!--==========================  HOME  ====================-->
-
-          <section class="content-card home" id="welcome-section">
-            <h1>Olá, eu sou Valderlan Silva</h1>
-          </section>
-
-          <!--========================= SOBRE MIM =========================-->
-
-          <section class="content-card about" id="about">
-            <h1>Sobre mim</h1>
-            <div class="about-item about-me">
-              <p>
-                Sou uma pessoa apaixonado por tecnologia e por mudar o mundo
-                através da programação. Um entusiasta em aprender dia após dia
-                novas tecnologias do mercado.
-              </p>
-              <p>
-                Com um interesse constante na área de desenvolvimento web,
-                aprofundei meus conhecimentos em HTML5, CSS e JavaScript, além
-                de framework como React e algumas outras linguagens. Após um
-                intenso período de estudo e prática, busco agora minha primeira
-                oportunidade como desenvolvedor front-end, onde espero aplicar
-                meus conhecimentos e habilidades para criar interfaces elegantes
-                e funcionais que proporcionem uma experiência agradável para os
-                usuários.
-              </p>
-            </div>
-
-            <div class="col-2">
-              <div class="about-item skills">
-                <h1>Habilidades</h1>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Python</span>
-                <span class="skill">React</span>
-                <span class="skill">Sass</span>
-                <span class="skill">Bootstrap</span>
-                <span class="skill">Git/Github</span>
-                <span class="skill">API</span>
-                <span class="skill">TypeScript</span>
-                <span class="skill">Figma</span>
-              </div>
-
-              <div class="about-item languages">
-                <h1>Idiomas</h1>
-
-                <div class="language">
-                  <p>Inglês</p>
-                  <span class="bar"><span class="english"></span></span>
-                </div>
-                <div class="language">
-                  <p>Espanhol</p>
-                  <span class="bar"><span class="spanish"></span></span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!--================================= PROJETOS ========================-->
-
-          <section class="content-card projects" id="projects">
-            <h1>Projetos</h1>
-
-            <div class="col-2 project-list">
-              <div class="project-tile">
-                <img src="./imagem/PingPong.png" alt="PingPong" />
-                <div class="overlay">
-                  <div class="project-description">
-                    <h3>Jogo Ping Pong</h3>
-                    <br />
-                    <p>
-                      Este foi um jogo que desenvolvi no curso DevSamurai, foi
-                      feito totalmente com javascript. Foi definido várias
-                      funções para desenhar os elementos do jogo, incluindo o
-                      campo, a linha, as raquetes, a bola e o placar.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="project-tile">
-                <img src="./imagem/Calc_theme.png" alt="Calculadora" />
-                <div class="overlay">
-                  <div class="project-description">
-                    <h3>Calculadora que alterna Tema</h3>
-                    <br />
-                    <p>
-                      Este foi um pequeno projeto que desenvolvi com intuito de
-                      melhorar minhas habilidades nas principais ferramentas do
-                      Front-end.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="project-tile">
-                <img src="./imagem/MudarTema.png" alt="" />
-                <div class="overlay">
-                  <div class="project-description">
-                    <h3>Mudar Tema da Página</h3>
-                    <br />
-                    <p>
-                      Projeto desenvolvido para melhorar minhas habilidades no
-                      JavaScript.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="project-tile">
-                <img src="./imagem/sistema_solar.png" alt="" />
-                <div class="overlay">
-                  <div class="project-description">
-                    <h3>Sistema Solar</h3>
-                    <br />
-                    <p>
-                      Neste Projeto busco mostrar todas as minha habilidades
-                      utilizando o CSS. No qual recrio o sistema solar, com
-                      todos os planetas inclusive a lua da terra, as medidas de
-                      tamanhos, distância e velocidade dos planetas estão
-                      proporcionais com a realidade.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="https://github.com/valderlanjs" target="_blank"
-              >Ver Mais...</a
-            >
-          </section>
-
-          <!--=============================== EXPERIÊNCIA =============================-->
-
-          <section class="content-card experience" id="experience">
-            <h1>Educação</h1>
-            <div class="timeline">
-              <div class="timeline-items">
-                <div class="timeline-item">
-                  <div class="timeline-date">2022 - Cursando</div>
-                  <div class="timeline-content">
-                    <h3>Universidade Estácio de Sá</h3>
-                    <p>
-                      Estou atualmente cursando o tecnólogo de
-                      <strong> Análise e desenvolvimento de Sistemas</strong>,
-                      com prazo para término em Junho de 2024.
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content">
-                      <h3>Curso JavaScript</h3>
-                      <p>
-                        Curso de JavaScript na plataforma DevSamurai, no qual
-                        aprendi do mais básico ao avançado desta linguagem, indo
-                        de conhecimento de DOM à POO(programação orientada a
-                        objeto). Neste curso desenvolvi pequenos projetos como
-                        gerador de senhas, TODO List e um jogo de Ping Pong.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                      <h3>Curso Programador Full Stack OneBitCode</h3>
-                      <p>
-                        Neste curso, além de melhorar ainda mais meu
-                        conhecimento em JavaScript, aprimorei minhas habilidades
-                        de CSS e HTML5. Além de aprender novas habilidades na
-                        Programação, como no reactJS, TypeScript, Bootstrap,
-                        Github e Sass. Também desenvolvi um breve conhecimento
-                        na área do Back-end com NodeJS, MongoDB e Banco de Dados
-                        SQL no NodeJS.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                      <h3>Curso de UI Design na Udemy</h3>
-                      <p>
-                        Neste curso desenvolvi um conhecimento um pouco mais
-                        aprofundado no UI design através do Figma, com intuido
-                        de melhorar minhas habilidades no desenvolvimento
-                        Front-end, assim podendo criar interfaces mais atrativas
-                        e inovadoras para os usuários.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!--============================  CONTATO   ============================-->
-
-          <section class="content-card contact" id="contact">
-            <h1>Contato</h1>
-            <form class="form" action="mailto:valderlanjosr15@gmail.com">
-              <div class="input-box">
-                <input
-                  type="text"
-                  class="text-input"
-                  name="name"
-                  placeholder="Nome"
-                />
-              </div>
-              <div class="input-box">
-                <input
-                  type="email"
-                  class="text-input"
-                  name="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="input-box">
-                <input
-                  type="subject"
-                  class="text-input"
-                  name="subject"
-                  id="subject"
-                  placeholder="Assunto"
-                />
-              </div>
-              <div class="input-text">
-                <textarea
-                  name="text"
-                  id="message"
-                  placeholder="Mensagem..."
-                ></textarea>
-              </div>
-              <div class="input-text">
-                <input
-                  type="submit"
-                  class="submit-btn"
-                  id="submit"
-                  value="Enviar"
-                />
-              </div>
-            </form>
-          </section>
+        <div class="solcial-media">
+            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/valderlanjs" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/valderlanjs" target="_blank"><i class='bx bxl-github' ></i></a>    
         </div>
-      </div>
+    
+    <a href="https://drive.google.com/file/d/1Ybp_X2bnvzrvY2i7BvUegLrwiBPih135/view?usp=drive_link" class="btn" target="_blank">Download CV</a>
     </div>
-  </body>
+
+    <div class="profession-container">
+        <div class="profession-box">
+            <div class="profession" style="--i:0;">
+                <i class="devicon-javascript-plain colored"></i>
+                <h3>Full Stack Developer</h3>
+            </div>
+            <div class="profession" style="--i:1;">
+                <i class="devicon-html5-plain colored"></i>
+                <h3>Full Stack Developer</h3>
+            </div>
+            <div class="profession" style="--i:2;">
+                <i class="devicon-react-original colored"></i>
+                <h3>Full Stack Developer</h3>
+            </div>
+            <div class="profession" style="--i:3;">
+                <i class="devicon-nodejs-plain colored"></i> 
+               <h3>Full Stack Developer</h3>
+            </div>
+            <div class="circle"></div>
+        </div>
+
+      <div class="overlay"></div>
+        
+    </div>
+</section>
+
+
+<!--About section design-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="/img/icon/curriculo.png" alt="">
+    </div>
+
+    <div class="about-content"> 
+        <h2 class="heading">Sobre <span>Mim</span></h2>
+        
+        <p>
+            Sou um programador apaixonado, sempre buscando aprender e crescer na minha carreira.
+            Tenho experiência prática com JavaScript, ReactJS, NodeJS, HTML, CSS, TypeScript e React Native.
+            Acredito que a programação é uma forma de arte que nos permite criar soluções inovadoras para
+            problemas complexos. Meu objetivo é usar minhas habilidades para desenvolver aplicações web e mobile
+            eficientes e intuitivas que atendam às necessidades dos usuários.
+            Estou sempre aberto a novas oportunidades e desafios que me permitam
+            expandir meu conjunto de habilidades e contribuir para projetos significativos.  
+        </p>
+
+    </div>
+</section>
+
+<!--skills section design-->
+<section class="skills" id="skills">
+    <h2 class="heading">
+        Minhas <span>Skills</span>
+    </h2>
+    <div class="skills-container">
+        <div class="skills-box">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <h3>HTML E CSS</h3>
+            <p>Amplo conhecimento e proficiência em HTML, incluindo entendimento da semântica das tags. 
+            Habilidade em estilização com CSS, com ênfase em alinhamento, flexbox e design responsivo. </p>
+            
+        </div>
+        <div class="skills-box">
+            <i class="devicon-javascript-plain colored"></i>
+            <h3>JavaScript</h3>
+            <p>Sólido conhecimento em desenvolvimento front-end utilizando JavaScript,
+            especialmente com o framework ReactJS. No lado servidor, experiência no 
+            desenvolvimento de APIs utilizando o Node.js.</p>
+            </p>
+        
+        </div>
+        <div class="skills-box"> 
+            <i class="devicon-react-original colored"></i>         
+            <h3>Reactjs</h3>
+            <p>Posso criar componentes funcionais e de classe,
+            compreendendo as diferenças, uso eficiente de hooks,
+            conhecimento de props e comunicação entre componentes
+            e requisição HTTP.</p>
+            
+        </div>
+        <div class="skills-box">
+            <i class="devicon-typescript-plain colored"></i>         
+            <h3>TypeScript</h3>
+            <p>Entendimento do sistema de tipos estáticos para garantir maior segurança para o código.
+             Aproveitamento da capacidade de inferência de tipos para reduzir a redundância.</p>
+            
+        </div>
+        <div class="skills-box">
+            <i class="devicon-nodejs-plain colored"></i>
+            <h3>Node Js</h3>
+            <p> Criação de APIs robustas com Express. Manipulação assíncrona,
+                integração com bancos de dados.
+                Conhecimento em pacotes npm, ambiente de execução eficiente.</p>
+        </div>
+        <div class="skills-box">
+            <i class="devicon-react-original colored"></i>
+            <h3>React Native</h3>
+            <p>Conhecimento básico em criação de interfaces, navegação e componentes.
+            Disposto a aprender e expandir habilidades para projetos mobile mais avançados.</p>
+            
+        </div>
+        <div class="skills-box">
+            <i class="devicon-git-plain colored"></i>
+            <h3>Git</h3>
+            <p>rastreamento, versionamento, resolução de conflitos.
+            Uso eficiente de comandos como add, commit, merge.
+            Consciência das práticas colaborativas e integração contínua.</p>
+            
+        </div>
+        <div class="skills-box">
+            <i class='bx bx-brain'></i>
+            <h3>Soft Skills</h3>
+           <ul>
+            <li>Resolução de Problemas</li>
+            <li>Persistência</li>
+            <li>Habilidades de comunicação e interpessoais</li>
+            <li>Aprendizado contínuo</li>
+            <li>Empatia</li>
+           </ul>
+            
+        </div>
+    </div>
+</section>
+
+<!--portfolio section design-->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Alguns <span>Projetos</span></h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="./img/portfolio/EM BREVE.png" alt="01">
+
+            <div class="portfolio-layer">
+                <h4>projeto 01</h4>
+                <p>.......................</p>
+                <a href=""><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="./img/portfolio/EM BREVE.png" alt="01">
+
+            <div class="portfolio-layer">
+                <h4>projeto 02</h4>
+                <p>........................
+                </p>
+                <a href=""><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="./img/portfolio/EM BREVE.png" alt="01">
+
+            <div class="portfolio-layer">
+                <h4>projeto 03</h4>
+                <p>.......................</p>
+                <a href=""><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="./img/portfolio/EM BREVE.png" alt="01">
+
+            <div class="portfolio-layer">
+                <h4>projeto 04</h4>
+                <p>.......................</p>
+                <a href=""><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="./img/portfolio/EM BREVE.png" alt="01">
+
+            <div class="portfolio-layer">
+                <h4>projeto 05</h4>
+                <p>.......................</p>
+                <a href=""><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="./img/portfolio/EM BREVE.png" alt="01">
+
+            <div class="portfolio-layer">
+                <h4>projeto 06</h4>
+                <p>.......................</p>
+                <a href=""><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--contact section design-->
+<section class="contact" id="contact">
+    <h2 class="heading">Contato</h2>
+
+    <form action="mailto:valderlanjosr15@gmail.com">
+        <div class="input-box">
+            <input type="text" placeholder="Nome completo">
+            <input type="email" placeholder="Endereço de Email">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Telefone">
+            <input type="text" placeholder="Assunto do Email">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+        <input type="submit" value="Enviar Mensagem" class="btn">
+    </form>
+</section>
+
+
+<!--footer design-->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyringht &copy; 2023 by Valderlan José| Todos os direitos resevados.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
+<!--BIBLIOTECA DE ANIMAÇÃO DE ROLAGEM-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!--ARQUIVO JS-->
+<script src="./assets/js/script.js"></script>
+</body>
 </html>
