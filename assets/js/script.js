@@ -46,10 +46,9 @@ navbar.classList.remove('active');
 
 }
 
-//=====****BIBLIOTECA DE ANIMAÇÃO DE ROLAGEM SCROLL REVEAL****=====//
+//=====****BIBLIOTECA PARA ANIMAÇÃO DE ROLAGEM SCROLL REVEAL****=====//
 
 ScrollReveal({
-//reset: true,
     distance: '80px',
     duration: 2000,
     delay: 100
