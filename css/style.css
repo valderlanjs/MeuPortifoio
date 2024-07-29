@@ -485,6 +485,12 @@ h2,
   
 }
 
+@media screen and (max-width: 490px) {
+  footer {
+    background-color: #1F2328!important;
+  }
+}
+
 @media screen and (max-width: 500px) {
 
 .soft-skills {
