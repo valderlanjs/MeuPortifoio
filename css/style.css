@@ -485,28 +485,6 @@ h2,
   
 }
 
-@media screen and (max-width: 490px) {
-  footer {
-    color: #1F2328 !important;
-    }
-
-    .info {
-      border-right: 2px solid #7c8071 !important;
-    }
-
-    .marcar-container {
-      background-color: #E5E5E5 !important;
-      color: #7c8071 !important;
-    }
-
-    .mil-menu-content {
-      color: #E5E5E5!important;
-    }
-
-    .container-principal {
-      background-color: #fff !important;
-    }
-}
 
 @media screen and (max-width: 500px) {
 
