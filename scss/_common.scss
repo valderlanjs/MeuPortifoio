@@ -380,6 +380,12 @@ a {
     }
 }
 
+@media screen and (max-width: 490px) {
+    .container-footer {
+        background-color: $gs-70;
+    }
+}
+
 /* -------------------------------------------
 
 link
