@@ -496,6 +496,11 @@ h2,
 
     .marcar-container {
       background-color: #E5E5E5 !important;
+      color: #7c8071 !important;
+    }
+
+    .mil-menu-content {
+      color: #E5E5E5!important;
     }
 }
 
