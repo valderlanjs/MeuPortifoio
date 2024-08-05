@@ -103,9 +103,13 @@ body {
 
 /*BLOG*/
 .blog-container {
+ 
   margin-top: 60px !important;
 }
 
+.teste {
+  background-color: transparent;
+}
 
 
 .mil-wrapper {
@@ -495,11 +499,19 @@ h2,
 
 
 @media screen and (max-width: 500px) {
-
+.teste {
+  
+    margin-bottom: 120px !important;
+    background-color: transparent;
+  }
 .soft-skills {
 
     width: auto;
     padding-left: 30px;
+  }
+
+  .info {
+    border-right: 1px solid #7c8071 !important;
   }
 }
 
