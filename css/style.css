@@ -141,6 +141,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
+
+.container-principal {
+  height: 120vh!important;
+}
 .about-text{
   font-size: 24px;
 }
@@ -206,6 +211,20 @@ body {
   scale: 1.1;
 }
 
+.download-curr {
+  display: flex!important;
+  justify-content: space-between!important;
+  margin-top: 20px;
+  height: 40px!important;
+  width: 220px;
+ 
+}
+
+.curriculo {
+  display: flex;
+  justify-content: center;
+
+}
 .container-marca {
   display: flex;
   justify-content: center;
@@ -422,6 +441,9 @@ h1,
   h1,
 .mil-h1 {
     font-size: 58px;
+  }
+  .container-principal {
+    height: 140vh!important;
   }
 }
 @media screen and (max-width: 768px) {
