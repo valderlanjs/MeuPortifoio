@@ -42,7 +42,7 @@
         </div>
         <!-- cursor end -->
 
-        <!-- preloader -
+        <!-- preloader -->
          
        <div class="mil-preloader">
             <div class="mil-preloader-animation">
@@ -545,10 +545,10 @@
 
                                     
 
-                                    <form class="mil-subscribe-form mil-up">
-                                        <input type="text" placeholder="Insira seu E-mail">
-                                        <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
-                                    </form>
+                                    <div class="mil-subscribe-form mil-up" >
+                                        <input name="email" id="email-input" type="text" placeholder="Insira seu E-mail">
+                                        <button  type="button" id="contact-btn" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
+                                    </div>
 
                                 </div>
                                 <div class="col-md-7 col-lg-6">
@@ -744,7 +744,18 @@
         </div>
         <!-- content -->
     </div>
+
     <!-- wrapper end -->
+     <!--Função de redirecionar o click ddo botão para a pagina de contato-->
+    <script>
+        function redirectToContact() {
+                const email = document.getElementById('email-input').value;
+                window.location.href = '/contact.html?email=' + encodeURIComponent(email);
+            }
+
+            // Evento de clique no botão "contact-btn"
+            document.getElementById('contact-btn').addEventListener('click', redirectToContact);
+    </script>
 
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>
